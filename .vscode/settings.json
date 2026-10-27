@@ -1,0 +1,7 @@
+{
+  "window.title": "KICKOFF (personal) - ${activeEditorShort}",
+  "workbench.colorCustomizations": {
+    "titleBar.activeBackground": "#0e5a3a",
+    "titleBar.activeForeground": "#fafbf8"
+  }
+}
