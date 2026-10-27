@@ -22,4 +22,4 @@ test('out-of-stock product shows Out of stock', async ({ page }) => {
 test('Cleats PLP shows 5 products', async ({ page }) => {
   await page.goto('/shop?category=cleats');
   await expect(page.getByRole('heading', { name: 'Cleats' })).toBeVisible();
-   expect(page.getByTestId('product-card')).toHaveCount(6);});
+  await expect(page.getByTestId('product-card')).toHaveCount(5);});
