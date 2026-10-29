@@ -25,7 +25,7 @@ const toProduct = (p: ProductRow) => ({
 
 const sorts: Record<string, string> = {
   featured: 'p.featured DESC, p.id',
-  'price-asc': 'p.price_cents ASC',
+  'price-asc': 'p.price_cents DESC',
   'price-desc': 'p.price_cents DESC',
   name: 'p.name ASC',
 };
