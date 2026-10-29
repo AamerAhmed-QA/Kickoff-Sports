@@ -85,7 +85,7 @@ test('Search', async ({ page }) => {
     await page.getByRole('searchbox', { name: 'Search products' }).fill('ball');
     await page.getByRole('button', { name: 'Search' }).click();
     await expect(page.getByTestId('product-card')).toHaveCount(4);
-    await page.getByLabel('Category').selectOption('Balls');
+   await page.getByLabel('Category').selectOption('Balls');
     await expect(page.getByRole('heading', { name: 'Results for “ball”' })).toBeVisible();
     await expect(page.getByTestId('product-card')).toHaveCount(3);
 });
